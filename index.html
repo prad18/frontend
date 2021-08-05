@@ -12,16 +12,16 @@
         <header>
             <img src="images/logo.svg" alt="24andfour logo" class="logo">
             <nav>
-                <a href="#" class="hide-desktop" id="nav">
+                <a href="#" class="hide-desktop">
                     <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
                 </a>
             
                 <ul class="show-desktop hide-mobile" id="nav">
                     <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Sign In</a></li>
                 </ul>
             </nav>
         </header>
@@ -40,17 +40,17 @@
             <ul>
                 <li>
                     <img src="images/icon-1.svg" alt="Calender icon">
-                    <p>Nothing much................................</p>
+                    <p>Initially, we're going structure of HTML, CSS and some JavaScript. Then, we spend the rest of the course taking the UI design mockup that we created in the UI Design Crash Course (linked below) and make it a reality in the browser by writing HTML and CSS from scratch!</p>
                 </li>
 
                 <li>
                     <img src="images/icon-2.svg" alt="Calender icon">
-                    <p>Nothing much................................</p>
+                    <p>Initially, we're going structure of HTML, CSS and some JavaScript. Then, we spend the rest of the course taking the UI design mockup that we created in the UI Design Crash Course (linked below) and make it a reality in the browser by writing HTML and CSS from scratch!</p>
                 </li>
                 
                 <li>
                     <img src="images/icon-3.svg" alt="Calender icon">
-                    <p>Nothing much................................</p>
+                    <p>Initially, we're going structure of HTML, CSS and some JavaScript. Then, we spend the rest of the course taking the UI design mockup that we created in the UI Design Crash Course (linked below) and make it a reality in the browser by writing HTML and CSS from scratch!.</p>
                 </li>
             </ul>
         </div>
@@ -62,7 +62,7 @@
                 <li>
                     <figure>
                         <img src="images/user1.png" alt="user testomonial picture">
-                        <blockquote>I love this web its amazingggg</blockquote>
+                        <blockquote>I love this web its amazingggg. I am happy that i visited this website really happpy</blockquote>
                         <figcaption>- Jane Doe</figcaption>
                     </figure>
                 </li>
@@ -70,7 +70,7 @@
                 <li>
                     <figure>
                         <img src="images/user2.png" alt="user testomonial picture">
-                        <blockquote>I love this web its amazingggg</blockquote>
+                        <blockquote>I love this web its amazingggg. THIS WEB IS JUST COOL I BECAME A WEB DEV TY</blockquote>
                         <figcaption>- Thomson</figcaption>
                     </figure>
                 </li>
@@ -99,5 +99,24 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click',function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click',function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+
+    </script>
+
 </body>
 </html>

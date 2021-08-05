@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
 
 body {
-    margin:0;
-    font-family: 'Montserrat',sans-serif;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
-p,blockquote{
+p, blockquote {
     font-size: .9em;
     line-height: 1.6em;
 }
@@ -25,13 +25,12 @@ ul {
     width: 130px;
 }
 
+.hide-mobile {
+    display: none;
+}
 header {
     display: flex;
     justify-content: space-between;
-}
-
-.hide-mobile {
-    display: none;
 }
 
 .menu {
@@ -44,7 +43,7 @@ header {
     margin: 2em auto 2em 25%;
 }
 
-h1 , .subhead {
+h1, .subhead {
     position: relative;
     z-index: 3;
 }
@@ -55,7 +54,7 @@ h1 , .subhead {
 
 .blue-container {
     width: 100%;
-    background: #00C2ff;
+    background: #00C2FF;
     color: #fff;
     margin-top: 15%;
     padding: 4em 0 2em;
@@ -67,13 +66,12 @@ h1 , .subhead {
     content: "";
     width: 40px;
     height: 40px;
-    background-color: #00C2ff;
+    background-color: #00C2FF;
     position: absolute;
     top: -39px;
     right: 0;
     z-index: -2;
 }
-
 
 .blue-container:after {
     content: "";
@@ -87,7 +85,7 @@ h1 , .subhead {
     z-index: -1;
 }
 
-.blue-container ul{
+.blue-container ul {
     transform: skewY(2deg);
 }
 
@@ -108,7 +106,7 @@ h1 , .subhead {
 }
 
 .grey-container {
-    background: #f6f6f6;
+    background: #F6F6F6;
     padding: 4em 0 2em;
     margin-top: -3%;
 }
@@ -124,13 +122,11 @@ figure {
 
 figcaption {
     font-weight: bold;
-    color: #00C2ff;
-
+    color: #00C2FF;
 }
 
 h2 {
     margin-top: 7%;
-
 }
 
 .cta {
@@ -149,7 +145,7 @@ h2 {
 
 .footer-container {
     width: 100%;
-    background: #3d444a;
+    background: #3D444A;
     color: #fff;
     padding: 3em 0;
     border-bottom-right-radius: 40px;
@@ -160,11 +156,11 @@ h2 {
     transform: skewY(-2deg);
 }
 
-.footer-container:before{
+.footer-container:before {
     content: "";
     width: 40px;
     height: 40px;
-    background-color: #3d444a;
+    background-color: #3D444A;
     position: absolute;
     top: -39px;
     left: 0;
@@ -181,20 +177,19 @@ h2 {
     top: -80px;
     left: 0;
     border-radius: 50%;
-
 }
 
-.footer-links {
+ul.footer-links {
     margin: 0 auto;
 }
 
-.footer-links li {
+ul.footer-links li {
     display: inline-block;
 }
 
-.footer-links li a {
-   color: #9d9d9d;
-   font-size: .8em;
+ul.footer-links li a {
+    color: #9D9D9D;
+    font-size: .8em;
 }
 
 nav ul {
@@ -203,7 +198,7 @@ nav ul {
     top: 0;
     right: 0;
     text-align: left;
-    background: rgb(36, 41, 44);
+    background: rgb(36,41,44);
     height: 100%;
     z-index: 7;
     padding-top: 3em;
@@ -216,12 +211,10 @@ nav ul li a {
     width: 100%;
     padding: 1em 2em;
     background-color: rgb(49, 55, 59);
-
 }
 
 nav ul li a:hover {
     background-color: rgb(65, 73, 78);
-
 }
 
 .exit-btn {
@@ -236,7 +229,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-@media only screen and (min-width:650px) {
+@media only screen and (min-width: 650px)  {
 
     .server {
         width: 50%;
@@ -245,7 +238,6 @@ nav ul li a:hover {
     h1 {
         font-size: 3em;
         margin: 0;
-
     }
 
     .subhead {
@@ -290,7 +282,7 @@ nav ul li a:hover {
 
 }
 
-@media only screen and (min-width:875px) {
+@media only screen and (min-width: 875px)  {
 
     .subhead {
         margin-bottom: 15%;
@@ -298,17 +290,18 @@ nav ul li a:hover {
 
     .blue-container ul {
         margin: 0 0 4% 0;
-
     }
 
     .grey-container ul {
         margin: 4% 0 0;
     }
+
 }
 
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width: 1024px)  {
+
     .cta {
-        width: 50;
+        width: 50%;
     }
 
     .container {
@@ -335,12 +328,11 @@ nav ul li a:hover {
     }
 
     nav ul li {
-        float:left;
-
+        float: left;
     }
 
     nav ul li a {
-        color:black;
+        color: black;
         background-color: inherit;
         text-align: right;
         padding: 1em 2em;
@@ -349,4 +341,57 @@ nav ul li a:hover {
     nav ul li a:hover {
         background-color: inherit;
     }
+
+    .scroll {
+        width: 30px;
+        animation: move 1s infinite alternate;
+    }
+
+    @keyframes move {
+        from {
+            transform: translateY(0px);
+        }
+        to {
+            transform: translateY(20px);
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1600px)  {
+
+    .server {
+        width: 40%;
+        margin: 5em auto 4em 15%;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    .blue-container {
+        padding: 7em 0 2em;
+    }
+
+    .blue-container ul li p, blockquote {
+        font-size: 1.3em;
+    }
+
+    .grey-container {
+        padding: 6em 0 4em;
+    }
+
+    h2 {
+        margin-top: 4em;
+    }
+
+    .blue-container img {
+        width: 15%;
+    }
+
+    .blue-container ul li:nth-child(3) img {
+        width: 8%;
+        margin-top: -4px;
+    }
+
 }
